@@ -25,6 +25,8 @@ Atividade 3
 ![image](https://github.com/user-attachments/assets/4efee842-3075-480d-a657-190d03858a6e)
 
 
+1º Exemplo de trade-off
+ 
 O Federated Strato Column é um componente do sistema backend do Twitter, responsável por gerenciar e fornecer dados estruturados e desestruturados, como tweets, informações de usuários, e outros conteúdos necessários para compor a experiência do usuário na plataforma.
 
 O termo "federated" implica que essa estrutura é distribuída e integrada a vários sistemas, possibilitando o acesso a diferentes fontes de dados em vários servidores ou locais, assegurando que o Twitter consiga escalar o fornecimento de conteúdo para milhões de usuários simultaneamente.
@@ -33,4 +35,19 @@ Por exemplo, ao carregar um tweet na timeline, o Federated Strato Column busca o
 
 O Federated Strato Column determina quais conteúdos são visíveis para o usuário com base em regras de segurança, moderação, ou preferências pessoais. Isso pode incluir a remoção de tweets que violem as diretrizes da plataforma ou que sejam considerados irrelevantes para o usuário específico.
 
-O Federated Strato Column é capaz de melhorar a escalabilidade do Twitter, envolvendo processos complexos de consultas em várias bases de dados, para filtrar os conteúros e exibindo apenas os melhores conteúdos para determinado usuário, assim aumentanto a retenção de usuários. Entretanto, isso aumenta muito a complexidade e custo do sistema, haja vista os 
+O Federated Strato Column é capaz de melhorar a escalabilidade do Twitter, envolvendo processos complexos de consultas em várias bases de dados, a fim de filtrar os conteúros de forma que sejam exibidos apenas os melhores conteúdos para determinado tipo usuário, desta froma, aumentanto a retenção de usuários. Entretanto, isso aumenta muito a complexidade e custo do sistema para simplesmente carregar uma tela inicial.
+
+Por isso, é evidente que, entre uma melhor escalabilidade ou um menor custo de desenvolvimento, foi preferido uma melhor escalabilidade, haja vista que uma rede social desse porte necessita atender uma demanda enorme de requisições e ser capaz de manter os usuários o máximo de tempo online na plataforma.
+
+
+
+
+2º Exemplo de trade-off
+
+A TLS-API é uma interface que facilita a comunicação segura entre diferentes componentes de um sistema, usando o protocolo TLS. 
+
+No contextp do twitter, a TLS-API era usada para permitir que os diferentes componentes do Twitter, como o frontend e o backend, se comunicassem de maneira segura, especialmente ao lidar com dados sensíveis, como informações de usuários e autenticações.
+
+De acordo com a imagem, o Twitter estava em processo de substituí-la por uma tecnologia ou abordagem mais moderna e eficiente. Isso geralmente ocorre quando uma tecnologia se torna obsoleta, seja por razões de segurança, desempenho ou manutenção, e a empresa migra para alternativas melhores.
+
+Portanto, entre segurança e Custo de Desenvolvimento, foi optado por parar de utilizar a TLS-API, por ja ser um protocolo de segurança desatualizado, que não tem o mesmo nivel relação a outros protocolos mais modernos.  
