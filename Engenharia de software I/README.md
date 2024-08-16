@@ -13,3 +13,5 @@ Adicionar várias etapas de validação, criptografia de dados etc, aumentam a s
 
 3. Custo de Desenvolvimento vs. Manutenibilidade
 Optar por uma solução mais barata e rápida para desenvolvimento, mas essas soluções podem resultar em código menos organizado e menos documentado, o que pode dificultar a manutenção e a evolução futura do sistema
+
+![image](https://github.com/user-attachments/assets/4efee842-3075-480d-a657-190d03858a6e)
