@@ -1,8 +1,12 @@
+Atividade 1
 We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
 
 Na engenharia de software há mais preocupações do que apenas programar, é necessário de preocupar com o gerenciamento de tempo, o quão escalavel e eficiente o programa é, etc. O engenheiro de sofware tem que se preocupar com possiveis mudanças ao longo do processo e tomar decisões delicadas rapidamente que não comprometam o desenvolvimento.
 
 
+
+
+Atividade 2
 3 exemplos de trade-offs levando em consideração requisitos nao funcionais:
 
 1. Desempenho vs. Escalabilidade
@@ -14,4 +18,19 @@ Adicionar várias etapas de validação, criptografia de dados etc, aumentam a s
 3. Custo de Desenvolvimento vs. Manutenibilidade
 Optar por uma solução mais barata e rápida para desenvolvimento, mas essas soluções podem resultar em código menos organizado e menos documentado, o que pode dificultar a manutenção e a evolução futura do sistema
 
+
+
+
+Atividade 3
 ![image](https://github.com/user-attachments/assets/4efee842-3075-480d-a657-190d03858a6e)
+
+
+O Federated Strato Column é um componente do sistema backend do Twitter, responsável por gerenciar e fornecer dados estruturados e desestruturados, como tweets, informações de usuários, e outros conteúdos necessários para compor a experiência do usuário na plataforma.
+
+O termo "federated" implica que essa estrutura é distribuída e integrada a vários sistemas, possibilitando o acesso a diferentes fontes de dados em vários servidores ou locais, assegurando que o Twitter consiga escalar o fornecimento de conteúdo para milhões de usuários simultaneamente.
+
+Por exemplo, ao carregar um tweet na timeline, o Federated Strato Column busca os detalhes do tweet, como texto, mídia associada, informações do autor, e interações (curtidas, retweets, etc.).
+
+O Federated Strato Column determina quais conteúdos são visíveis para o usuário com base em regras de segurança, moderação, ou preferências pessoais. Isso pode incluir a remoção de tweets que violem as diretrizes da plataforma ou que sejam considerados irrelevantes para o usuário específico.
+
+O Federated Strato Column é capaz de melhorar a escalabilidade do Twitter, envolvendo processos complexos de consultas em várias bases de dados, para filtrar os conteúros e exibindo apenas os melhores conteúdos para determinado usuário, assim aumentanto a retenção de usuários. Entretanto, isso aumenta muito a complexidade e custo do sistema, haja vista os 
