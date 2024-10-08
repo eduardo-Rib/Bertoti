@@ -93,7 +93,7 @@ public class Cachorro extends Animal {
 ![image](https://github.com/user-attachments/assets/a15bf12b-6f9b-46c2-aeeb-4aad6770dac6)
 
 
-##Exemplo 3 - Interface
+## Exemplo 3 - Interface
 ```java
 public interface Forma {
     double calcularArea();
@@ -112,7 +112,7 @@ public class Circulo implements Forma {
 ![image](https://github.com/user-attachments/assets/490b0e77-a6b6-4f0b-bc66-e7806c60de25)
 
 
-##Exemplo 4 - Agregação
+## Exemplo 4 - Agregação
 ```java
 public class Endereco {
     private String rua;
