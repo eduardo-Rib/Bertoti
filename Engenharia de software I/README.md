@@ -1,13 +1,10 @@
-Atividade 1
+# Atividade 1
 
 We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
 
 Na engenharia de software há mais preocupações do que apenas programar, é necessário de preocupar com o gerenciamento de tempo, o quão escalavel e eficiente o programa é, etc. O engenheiro de sofware tem que se preocupar com possiveis mudanças ao longo do processo e tomar decisões delicadas rapidamente que não comprometam o desenvolvimento.
 
-
-
-
-Atividade 2
+# Atividade 2
 
 
 3 exemplos de trade-offs levando em consideração requisitos nao funcionais:
@@ -24,7 +21,7 @@ Optar por uma solução mais barata e rápida para desenvolvimento, mas essas so
 
 
 
-Atividade 3
+# Atividade 3
 
 ![image](https://github.com/user-attachments/assets/4efee842-3075-480d-a657-190d03858a6e)
 
@@ -45,7 +42,6 @@ Por isso, é evidente que, entre uma melhor escalabilidade ou um menor custo de 
 
 
 
-
 2º Exemplo de trade-off
 
 A TLS-API é uma interface que facilita a comunicação segura entre diferentes componentes de um sistema, usando o protocolo TLS. 
@@ -55,3 +51,81 @@ No contextp do twitter, a TLS-API era usada para permitir que os diferentes comp
 De acordo com a imagem, o Twitter estava em processo de substituí-la por uma tecnologia ou abordagem mais moderna e eficiente. Isso geralmente ocorre quando uma tecnologia se torna obsoleta, seja por razões de segurança, desempenho ou manutenção, e a empresa migra para alternativas melhores.
 
 Portanto, entre segurança e Custo de Desenvolvimento, foi optado por parar de utilizar a TLS-API, por ja ser um protocolo de segurança desatualizado, que não tem o mesmo nivel relação a outros protocolos mais modernos.  
+
+
+# Atividade 4
+
+Exemplo 1 - Classe simples
+
+public class Pessoa {
+    private String nome;
+    private int idade;
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    public void exibirInfo() {
+        System.out.println("Nome: " + nome + ", Idade: " + idade);
+    }
+}
+
+![image](https://github.com/user-attachments/assets/ae7bda3f-7baa-4f73-8674-5ede3f84d2ae)
+
+
+Exemplo 2 - Herança
+
+public class Animal {
+    public void som() {
+        System.out.println("O animal faz um som.");
+    }
+}
+
+public class Cachorro extends Animal {
+    public void som() {
+        System.out.println("O cachorro late.");
+    }
+}
+
+![image](https://github.com/user-attachments/assets/a15bf12b-6f9b-46c2-aeeb-4aad6770dac6)
+
+
+Exemplo 3 - Interface
+
+public interface Forma {
+    double calcularArea();
+}
+
+public class Circulo implements Forma {
+    private double raio;
+    public Circulo(double raio) {
+        this.raio = raio;
+    }
+    public double calcularArea() {
+        return Math.PI * raio * raio;
+    }
+}
+
+![image](https://github.com/user-attachments/assets/490b0e77-a6b6-4f0b-bc66-e7806c60de25)
+
+
+Exemplo 4 - Agregação
+
+public class Endereco {
+    private String rua;
+    private String cidade;
+    public Endereco(String rua, String cidade) {
+        this.rua = rua;
+        this.cidade = cidade;
+    }
+}
+
+public class Pessoa {
+    private String nome;
+    private Endereco endereco;
+    public Pessoa(String nome, Endereco endereco) {
+        this.nome = nome;
+        this.endereco = endereco;
+    }
+}
+
+![image](https://github.com/user-attachments/assets/9f924777-d3af-47be-a551-25a83d089165)
