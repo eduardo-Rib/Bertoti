@@ -58,15 +58,25 @@ Portanto, entre segurança e Custo de Desenvolvimento, foi optado por parar de u
 Exemplo 1 - Classe simples
 
 public class Pessoa {
+
     private String nome;
+    
     private int idade;
+    
     public Pessoa(String nome, int idade) {
+    
         this.nome = nome;
+        
         this.idade = idade;
+        
     }
+    
     public void exibirInfo() {
+    
         System.out.println("Nome: " + nome + ", Idade: " + idade);
+        
     }
+    
 }
 
 ![image](https://github.com/user-attachments/assets/ae7bda3f-7baa-4f73-8674-5ede3f84d2ae)
