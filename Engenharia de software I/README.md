@@ -9,13 +9,13 @@ Na engenharia de software há mais preocupações do que apenas programar, é ne
 
 3 exemplos de trade-offs levando em consideração requisitos nao funcionais:
 
-1. Desempenho vs. Escalabilidade
+## 1. Desempenho vs. Escalabilidade
 Técnicas de otimização mais agressivas e complexas podem funcionar bem em uma escala menor, mas podem ser difíceis de ajustar quando o sistema precisa escalar para suportar um número muito maior de usuários
 
-2. Segurança vs. Usabilidade
+## 2. Segurança vs. Usabilidade
 Adicionar várias etapas de validação, criptografia de dados etc, aumentam a segurança, mas pioram a usabilidae do sistema, tornando complexo a utilização do sistema pelo usuário 
 
-3. Custo de Desenvolvimento vs. Manutenibilidade
+## 3. Custo de Desenvolvimento vs. Manutenibilidade
 Optar por uma solução mais barata e rápida para desenvolvimento, mas essas soluções podem resultar em código menos organizado e menos documentado, o que pode dificultar a manutenção e a evolução futura do sistema
 
 
@@ -26,7 +26,7 @@ Optar por uma solução mais barata e rápida para desenvolvimento, mas essas so
 ![image](https://github.com/user-attachments/assets/4efee842-3075-480d-a657-190d03858a6e)
 
 
-1º Exemplo de trade-off
+## 1º Exemplo de trade-off
  
 O Federated Strato Column é um componente do sistema backend do Twitter, responsável por gerenciar e fornecer dados estruturados e desestruturados, como tweets, informações de usuários, e outros conteúdos necessários para compor a experiência do usuário na plataforma.
 
@@ -42,7 +42,7 @@ Por isso, é evidente que, entre uma melhor escalabilidade ou um menor custo de 
 
 
 
-2º Exemplo de trade-off
+## 2º Exemplo de trade-off
 
 A TLS-API é uma interface que facilita a comunicação segura entre diferentes componentes de um sistema, usando o protocolo TLS. 
 
@@ -55,52 +55,46 @@ Portanto, entre segurança e Custo de Desenvolvimento, foi optado por parar de u
 
 # Atividade 4
 
-Exemplo 1 - Classe simples
-
+## Exemplo 1 - Classe simples
+```java
 public class Pessoa {
 
     private String nome;
-    
     private int idade;
     
     public Pessoa(String nome, int idade) {
-    
         this.nome = nome;
-        
         this.idade = idade;
-        
     }
-    
-    public void exibirInfo() {
-    
-        System.out.println("Nome: " + nome + ", Idade: " + idade);
-        
-    }
-    
-}
 
+    public void exibirInfo() {
+        System.out.println("Nome: " + nome + ", Idade: " + idade);
+    }
+}
+```
 ![image](https://github.com/user-attachments/assets/ae7bda3f-7baa-4f73-8674-5ede3f84d2ae)
 
 
-Exemplo 2 - Herança
-
+## Exemplo 2 - Herança
+```java
 public class Animal {
     public void som() {
         System.out.println("O animal faz um som.");
     }
 }
-
+```
+```java
 public class Cachorro extends Animal {
     public void som() {
         System.out.println("O cachorro late.");
     }
 }
-
+```
 ![image](https://github.com/user-attachments/assets/a15bf12b-6f9b-46c2-aeeb-4aad6770dac6)
 
 
-Exemplo 3 - Interface
-
+##Exemplo 3 - Interface
+```java
 public interface Forma {
     double calcularArea();
 }
@@ -114,12 +108,12 @@ public class Circulo implements Forma {
         return Math.PI * raio * raio;
     }
 }
-
+```
 ![image](https://github.com/user-attachments/assets/490b0e77-a6b6-4f0b-bc66-e7806c60de25)
 
 
-Exemplo 4 - Agregação
-
+##Exemplo 4 - Agregação
+```java
 public class Endereco {
     private String rua;
     private String cidade;
@@ -128,7 +122,8 @@ public class Endereco {
         this.cidade = cidade;
     }
 }
-
+```
+```java
 public class Pessoa {
     private String nome;
     private Endereco endereco;
@@ -137,5 +132,5 @@ public class Pessoa {
         this.endereco = endereco;
     }
 }
-
+```
 ![image](https://github.com/user-attachments/assets/9f924777-d3af-47be-a551-25a83d089165)
