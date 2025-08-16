@@ -61,11 +61,10 @@ class CalculadoraFrete {
 public class Main {
     public static void main(String[] args) {
         CalculadoraFrete calculadora = new CalculadoraFrete(new Sedex());
-        System.out.println("Sedex: R$" + calculadora.calcularFrete(2)); // 2kg
+        System.out.println("Sedex: R$" + calculadora.calcularFrete(2)); 
 
         calculadora.setStrategy(new PAC());
-        System.out.println("PAC: R$" + calculadora.calcularFrete(2)); // 2kg
+        System.out.println("PAC: R$" + calculadora.calcularFrete(2));
     }
 }
-
 ```
